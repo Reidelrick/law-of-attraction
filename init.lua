@@ -41,9 +41,9 @@ end
 
 
 -- This code runs when all mods' filesystems are registered
-ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/noitaTestMod/files/actions.lua" )
-ModMagicNumbersFileAdd( "mods/noitaTestMod/files/magic_numbers.xml" )
-ModMaterialsFileAdd( "mods/noitaTestMod/files/materials.xml" )
-ModLuaFileAppend( "data/scripts/items/potion.lua", "mods/noitaTestMod/files/potion_appends.lua" )
+ModLuaFileAppend( "data/scripts/gun/gun_actions.lua", "mods/law-of-attraction/files/actions.lua" )
+ModMagicNumbersFileAdd( "mods/law-of-attraction/files/magic_numbers.xml" )
+ModMaterialsFileAdd( "mods/law-of-attraction/files/materials.xml" )
+ModLuaFileAppend( "data/scripts/items/potion.lua", "mods/law-of-attraction/files/potion_appends.lua" )
 
 --print("Example mod init done")
