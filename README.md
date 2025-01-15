@@ -1,1 +1,0 @@
-This mod is made for testing purpose only. If it ever becomes public, all pull request shall be closed.
