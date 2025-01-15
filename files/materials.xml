@@ -1,0 +1,46 @@
+<Materials>
+	<CellData
+		name="airborn_conductor"
+		ui_name="$mat_airborn_conductor"
+		wang_color="ffff60aa"
+		cell_type="gaz"
+		><Graphics 
+			color="00aeffff"
+			>
+		</Graphics>
+	</CellData>
+	<CellData
+		name="conductor_residue"
+		ui_name="$mat_conductor_residue"
+		wang_color="ffff60bb"
+		cell_type="liquid"
+		><Graphics 
+			color="00aeffff"
+			>
+		</Graphics>
+	</CellData>
+	<CellData
+		name="arsenic"
+		ui_name="$mat_arsenic"
+		liquid_sand="1"
+		wang_color="ffff60cc"
+		cell_type="liquid"
+		><Graphics 
+			color="e9e9e9ff"
+			>
+		</Graphics>
+		<StatusEffects>
+    		<Ingestion>
+      			<StatusEffect type="POISON" amount="1" />
+    		</Ingestion>
+  		</StatusEffects>
+	</CellData>
+	<Reaction probability="100"
+		input_cell1="[water]" input_cell2="wood_static"
+		output_cell1="airborn_conductor" output_cell2="conductor_residue"
+	></Reaction>
+	<Reaction probability="100"
+		input_cell1="[water]" input_cell2="[sand_ground]"
+		output_cell1="air" output_cell2="arsenic"
+	></Reaction>
+</Materials>
