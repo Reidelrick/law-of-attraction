@@ -1,40 +1,67 @@
 <Materials>
-  <CellData
-	name="low_grav"
-	ui_name="$mat_low_grav"
-  	tags="[liquid],[magic_liquid]"
-	burnable="0"
-	density="1.11"
-	cell_type="liquid"
-	wang_color="80F6FFDC"
-	generates_smoke="0"
-	liquid_gravity="0.8"
-	liquid_sand="0"
-	gfx_glow="100"
-	on_fire="0"
-	requires_oxygen="0"
-	liquid_stains="1"
-	liquid_sprite_stain_shaken_drop_chance="1"
-	status_effects="FASTER_LEVITATION"
-	audio_materialaudio_type="MAGICAL" 
-	show_in_creative_mode="1"
-	>
-	<ParticleEffect
-		vel.y="17.14"
-		vel_random.min_y="-100"
-		vel_random.max_y="25.71"
-		lifetime.min="0"
-		gravity.y="-8.57"
-		render_on_grid="1"
-		draw_as_long="1"
-		friction="-3.429"
-		probability="0.0518"
-	>
-	</ParticleEffect>
-	<StatusEffects>
-		<Ingestion>
-			<StatusEffect type="FASTER_LEVITATION" amount="0.2" />
-		</Ingestion>
-	</StatusEffects>
-  </CellData>
+
+	<CellData
+		name="loa_low_grav"
+		ui_name="Antigrav"
+		tags="[liquid],[magic_liquid]"
+		wang_color="ffff00dd"
+		gfx_glow="255"
+		density="0"
+		stickyness="0.0"
+		liquid_flow_speed="1.0"
+		cell_type="liquid"
+		audio_materialaudio_type="MAGICAL" 
+		show_in_creative_mode="1">
+		<Graphics 
+			color="eeeeaadd">
+			</Graphics>
+		<ParticleEffect
+			vel.y="17.14"
+			vel_random.min_y="-100"
+			vel_random.max_y="25.71"
+			lifetime.min="0"
+			gravity.y="-8.57"
+			render_on_grid="1"
+			draw_as_long="1"
+			friction="-3.429"
+			probability="0.0518"></ParticleEffect>
+		<StatusEffects>
+    		<Stains><StatusEffect type="MOVEMENT_FASTER_2X" /></Stains>
+    		<Ingestion><StatusEffect type="MOVEMENT_FASTER_2X" amount="0.2" /></Ingestion>
+			</StatusEffects>
+	</CellData>
+
+	<CellData
+		name="loa_high_grav"
+		ui_name="Hypergrav"
+		tags="[liquid],[magic_liquid]"
+		stickyness="1.0"
+		density="8"
+		cell_type="liquid"
+		wang_color="ffff00ee"
+		generates_smoke="0"
+		liquid_flow_speed="1"
+		gfx_glow="255"
+		audio_materialaudio_type="MAGICAL" 
+		show_in_creative_mode="1">
+		<Graphics 
+			color="999966ff">
+			</Graphics>
+		<ParticleEffect
+			vel.y="17.14"
+			vel_random.min_y="-100"
+			vel_random.max_y="25.71"
+			lifetime.min="0"
+			gravity.y="8.57"
+			render_on_grid="1"
+			draw_as_long="1"
+			friction="-3.429"
+			probability="0.0518">
+			</ParticleEffect>
+		<StatusEffects>
+    		<Stains><StatusEffect type="MOVEMENT_SLOWER_2X" /></Stains>
+    		<Ingestion><StatusEffect type="MOVEMENT_SLOWER_2X" amount="0.2" /></Ingestion>
+  			</StatusEffects>
+	</CellData>
+
 </Materials>
