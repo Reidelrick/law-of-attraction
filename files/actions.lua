@@ -70,21 +70,3 @@ table.insert( actions,
 	end,
 	
 })
-table.insert( actions,
-{
-	id          = "BIG_PUSH",
-	name 		= "BIG PUSH",
-	description = "How useful",
-	sprite 		= "mods/law-of-attraction/files/actions/big_push.png",
-	type 		= ACTION_TYPE_MATERIAL,
-	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD
-	spawn_probability                 = "1,1,1,1", -- BERSERK_FIELD
-	price = 350,
-	mana = 140,
-	max_uses = 3,
-	action 		= function()
-		add_projectile("mods/law-of-attraction/files/actions/big_push.xml")
-		c.fire_rate_wait = c.fire_rate_wait + 15
-	end,
-	
-})
