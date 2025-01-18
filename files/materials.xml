@@ -1,5 +1,32 @@
 <Materials>
 <!-- =================================================================================================================  -->
+<!-- POWDER  -->
+	<!-- Osmium -->
+	<CellData
+		name="loa_osmium"
+		ui_name="Osmium"
+		tags="[sand_metal],[alchemy],[solid],[earth]"
+		burnable="0"
+		density="8"
+		cell_type="liquid"
+		wang_color="ff4e5265"
+		generates_smoke="0"
+		on_fire="0"
+		liquid_gravity="2.5"
+		liquid_sand="1"
+		requires_oxygen="1"
+		temperature_of_fire="50"
+		autoignition_temperature="99"
+		solid_friction="0.7"
+		hp="8000" 
+		electrical_conductivity="1"
+		show_in_creative_mode="1">
+		<Graphics
+			texture_file="mods/law-of-attraction/files/materials_gfx/osmium.png"
+			color="ffb89e58" >
+			</Graphics>
+  		</CellData>
+<!-- =================================================================================================================  -->
 <!-- LIQUID  -->
 	<!-- Low Gravity Liquid -->
 	<CellData
@@ -11,6 +38,7 @@
 		density="0"
 		stickyness="0.0"
 		liquid_flow_speed="1.0"
+		liquid_stains="1"
 		cell_type="liquid"
 		audio_materialaudio_type="MAGICAL" 
 		show_in_creative_mode="1">
@@ -43,6 +71,7 @@
 		wang_color="ffff00ee"
 		generates_smoke="0"
 		liquid_flow_speed="1"
+		liquid_stains="1"
 		gfx_glow="255"
 		audio_materialaudio_type="MAGICAL" 
 		show_in_creative_mode="1">
@@ -77,6 +106,7 @@
 		generates_smoke="0"
 		liquid_flow_speed="1"
 		gfx_glow="255"
+		liquid_stains="1"
 		audio_materialaudio_type="MAGICAL" 
 		show_in_creative_mode="1">
 		<Graphics 
@@ -111,6 +141,7 @@
 		liquid_flow_speed="1"
 		gfx_glow="255"
 		audio_materialaudio_type="MAGICAL" 
+		liquid_stains="1"
 		show_in_creative_mode="1">
 		<Graphics 
 			color="999966ff">
@@ -169,19 +200,19 @@
 		input_cell1="loa_grav_base" input_cell2="magic_liquid_faster_levitation"
 		output_cell1="loa_low_grav" output_cell2="air"
 		></Reaction>
-	<!-- Grav		+ Lead			-> Highgrav + Air	-->
+	<!-- Grav		+ Osmium		-> Highgrav + Air	-->
 	<Reaction probability="80"
-		input_cell1="loa_grav_base" input_cell2="magic_liquid_faster_levitation"
+		input_cell1="loa_grav_base" input_cell2="loa_osmium"
 		output_cell1="loa_high_grav" output_cell2="air"
 		></Reaction>
 	<!-- Lowgrav	+ Highgrav		-> Nograv 	+ Air	-->
 	<Reaction probability="80"
-		input_cell1="loa_grav_base" input_cell2="magic_liquid_faster_levitation"
-		output_cell1="loa_low_grav" output_cell2="air"
+		input_cell1="loa_low_grav" input_cell2="loa_high_grav"
+		output_cell1="loa_no_grav" output_cell2="air"
 		></Reaction>
 	<!-- Nograv		+ Smoke			-> Antigrav + Air	-->
 	<Reaction probability="80"
-		input_cell1="loa_grav_base" input_cell2="magic_liquid_faster_levitation"
-		output_cell1="loa_low_grav" output_cell2="air"
+		input_cell1="loa_no_grav" input_cell2="smoke"
+		output_cell1="loa_reverse_grav" output_cell2="air"
 		></Reaction>
 </Materials>
