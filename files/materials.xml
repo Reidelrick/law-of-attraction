@@ -215,4 +215,9 @@
 		input_cell1="loa_no_grav" input_cell2="smoke"
 		output_cell1="loa_reverse_grav" output_cell2="air"
 		></Reaction>
+	<!-- Brass		+ Acceleratium	-> Grav		+ Air	-->
+	<Reaction probability="80"
+		input_cell1="brass" input_cell2="magic_liquid_movement_faster"
+		output_cell1="loa_grav_base" output_cell2="air"
+		></Reaction>
 </Materials>
