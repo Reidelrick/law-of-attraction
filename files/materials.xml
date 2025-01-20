@@ -1,5 +1,30 @@
 <Materials>
 <!-- =================================================================================================================  -->
+<!-- STATIC SANDS  -->
+	<!-- Stable Rock -->
+	<CellData
+		name="loa_rock_stable"
+		ui_name="Vakauskivi"
+		cell_type="liquid"
+		liquid_sand="1"
+		liquid_static="1"
+		tags=""
+		density="14"
+		hp="1000000" 
+		requires_oxygen="1"
+		wang_color="ffff0006"
+		burnable="0"
+		temperature_of_fire="50"
+		autoignition_temperature="99"
+		solid_friction="0.7"
+		electrical_conductivity="0"
+		show_in_creative_mode="1">
+		<Graphics
+			texture_file="mods/law-of-attraction/files/materials_gfx/osmium.png"
+			color="ffb89e58" >
+			</Graphics>
+  		</CellData>
+<!-- =================================================================================================================  -->
 <!-- POWDER  -->
 	<!-- Osmium -->
 	<CellData
@@ -9,7 +34,7 @@
 		burnable="0"
 		density="8"
 		cell_type="liquid"
-		wang_color="ff4e5265"
+		wang_color="ffff0005"
 		generates_smoke="0"
 		on_fire="0"
 		liquid_gravity="2.5"
@@ -33,7 +58,7 @@
 		name="loa_low_grav"
 		ui_name="Alhainenpainovoimium"
 		tags="[liquid],[magic_liquid]"
-		wang_color="ffff00dd"
+		wang_color="ffff0000"
 		gfx_glow="255"
 		density="0"
 		stickyness="0.0"
@@ -68,7 +93,7 @@
 		stickyness="1.0"
 		density="8"
 		cell_type="liquid"
-		wang_color="ffff00ee"
+		wang_color="ffff0001"
 		generates_smoke="0"
 		liquid_flow_speed="1"
 		liquid_stains="1"
@@ -102,7 +127,7 @@
 		stickyness="1.0"
 		density="8"
 		cell_type="liquid"
-		wang_color="ffff00ee"
+		wang_color="ffff0002"
 		generates_smoke="0"
 		liquid_flow_speed="1"
 		gfx_glow="255"
@@ -136,7 +161,7 @@
 		stickyness="1.0"
 		density="8"
 		cell_type="liquid"
-		wang_color="ffff00ee"
+		wang_color="ffff0003"
 		generates_smoke="0"
 		liquid_flow_speed="1"
 		gfx_glow="255"
@@ -170,7 +195,7 @@
 		burnable="0"
 		density="4"
 		cell_type="liquid"
-		wang_color="902F554C"
+		wang_color="ffff0004"
 		generates_smoke="0"
 		liquid_gravity="1.5"
 		liquid_sand="0"
