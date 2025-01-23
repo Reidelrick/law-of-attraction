@@ -1,9 +1,9 @@
 table.insert( actions,
 {
 	id          = "PULL_FIELD",
-	name 		= "Attraction Well",
-	description = "How useful",
-	sprite 		= "mods/law-of-attraction/files/actions/pull_field.png",
+	name 		= "First Law of Attraction",
+	description = "Conjure a small well of convergent gravity that attracts everything for a duration.",
+	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/pull_field.png",
 	type 		= ACTION_TYPE_MATERIAL,
 	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD
 	spawn_probability                 = "1,1,1,1", -- BERSERK_FIELD
@@ -11,7 +11,7 @@ table.insert( actions,
 	mana = 140,
 	max_uses = 3,
 	action 		= function()
-		add_projectile("mods/law-of-attraction/files/actions/pull_field.xml")
+		add_projectile("mods/law-of-attraction/files/entities/projectiles/pull_field.xml")
 		c.fire_rate_wait = c.fire_rate_wait + 15
 	end,
 	
@@ -19,9 +19,9 @@ table.insert( actions,
 table.insert( actions,
 {
 	id          = "PULL_POINT",
-	name 		= "Attraction Point",
-	description = "How useful",
-	sprite 		= "mods/law-of-attraction/files/actions/pull_point.png",
+	name 		= "Second Law of Attraction",
+	description = "Conjure a short-lived rift of convergent gravity that attracts everything for a fraction of a second.",
+	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/pull_point.png",
 	type 		= ACTION_TYPE_MATERIAL,
 	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD
 	spawn_probability                 = "1,1,1,1", -- BERSERK_FIELD
@@ -29,7 +29,7 @@ table.insert( actions,
 	mana = 140,
 	max_uses = 3,
 	action 		= function()
-		add_projectile("mods/law-of-attraction/files/actions/pull_point.xml")
+		add_projectile("mods/law-of-attraction/files/entities/projectiles/pull_point.xml")
 		c.fire_rate_wait = c.fire_rate_wait + 15
 	end,
 	
@@ -37,9 +37,9 @@ table.insert( actions,
 table.insert( actions,
 {
 	id          = "PUSH_FIELD",
-	name 		= "Repulsion Well",
-	description = "How useful",
-	sprite 		= "mods/law-of-attraction/files/actions/push_field.png",
+	name 		= "First Law of Repulsion",
+	description = "Conjure a small well of divergent gravity that pushes away everything for a duration.",
+	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/push_field.png",
 	type 		= ACTION_TYPE_MATERIAL,
 	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD
 	spawn_probability                 = "1,1,1,1", -- BERSERK_FIELD
@@ -47,7 +47,7 @@ table.insert( actions,
 	mana = 140,
 	max_uses = 3,
 	action 		= function()
-		add_projectile("mods/law-of-attraction/files/actions/push_field.xml")
+		add_projectile("mods/law-of-attraction/files/entities/projectiles/push_field.xml")
 		c.fire_rate_wait = c.fire_rate_wait + 15
 	end,
 	
@@ -55,9 +55,9 @@ table.insert( actions,
 table.insert( actions,
 {
 	id          = "PUSH_POINT",
-	name 		= "Repulsion Point",
-	description = "How useful",
-	sprite 		= "mods/law-of-attraction/files/actions/push_point.png",
+	name 		= "Second Law of Repulsion",
+	description = "Conjure a short-lived rift of divergent gravity that pushes away everything for a fraction of a second.",
+	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/push_point.png",
 	type 		= ACTION_TYPE_MATERIAL,
 	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD
 	spawn_probability                 = "1,1,1,1", -- BERSERK_FIELD
@@ -65,7 +65,25 @@ table.insert( actions,
 	mana = 140,
 	max_uses = 3,
 	action 		= function()
-		add_projectile("mods/law-of-attraction/files/actions/push_point.xml")
+		add_projectile("mods/law-of-attraction/files/entities/projectiles/push_point.xml")
+		c.fire_rate_wait = c.fire_rate_wait + 15
+	end,
+	
+})
+table.insert( actions,
+{
+	id          = "STAR_HEART",
+	name 		= "Summon Star",
+	description = "Conjure the heart of a dying star from thin air.",
+	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/push_point.png",
+	type 		= ACTION_TYPE_MATERIAL,
+	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD
+	spawn_probability                 = "1,1,1,1", -- BERSERK_FIELD
+	price = 350,
+	mana = 1,
+	max_uses = -1,
+	action 		= function()
+		add_projectile("mods/law-of-attraction/files/entities/items/pickup/starstone.xml")
 		c.fire_rate_wait = c.fire_rate_wait + 15
 	end,
 	

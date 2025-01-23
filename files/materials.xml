@@ -81,8 +81,8 @@
 			friction="-3.429"
 			probability="0.0518"></ParticleEffect>
 		<StatusEffects>
-    		<Stains><StatusEffect type="MOVEMENT_FASTER_2X" /></Stains>
-    		<Ingestion><StatusEffect type="MOVEMENT_FASTER_2X" amount="0.2" /></Ingestion>
+    		<Stains><StatusEffect type="loa_LOW_GRAV" /></Stains>
+    		<Ingestion><StatusEffect type="loa_LOW_GRAV" amount="0.2" /></Ingestion>
 			</StatusEffects>
 		</CellData>
 	<!-- High Gravity Liquid -->
@@ -90,8 +90,8 @@
 		name="loa_high_grav"
 		ui_name="Suuripainovoimium"
 		tags="[liquid],[magic_liquid]"
-		stickyness="1.0"
-		density="8"
+		stickyness="0.0"
+		density="16"
 		cell_type="liquid"
 		wang_color="ffff0001"
 		generates_smoke="0"
@@ -115,8 +115,8 @@
 			probability="0.0518">
 			</ParticleEffect>
 		<StatusEffects>
-    		<Stains><StatusEffect type="MOVEMENT_SLOWER_2X" /></Stains>
-    		<Ingestion><StatusEffect type="MOVEMENT_SLOWER_2X" amount="0.2" /></Ingestion>
+    		<Stains><StatusEffect type="loa_HIGH_GRAV" /></Stains>
+    		<Ingestion><StatusEffect type="loa_HIGH_GRAV" amount="0.2" /></Ingestion>
   			</StatusEffects>
 		</CellData>
 	<!-- Reverse Gravity Liquid -->
@@ -124,8 +124,8 @@
 		name="loa_reverse_grav"
 		ui_name="Käänteispainovoimium"
 		tags="[liquid],[magic_liquid]"
-		stickyness="1.0"
-		density="8"
+		stickyness="0.0"
+		density="0.0"
 		cell_type="liquid"
 		wang_color="ffff0002"
 		generates_smoke="0"
@@ -149,8 +149,8 @@
 			probability="0.0518">
 			</ParticleEffect>
 		<StatusEffects>
-    		<Stains><StatusEffect type="MOVEMENT_SLOWER_2X" /></Stains>
-    		<Ingestion><StatusEffect type="MOVEMENT_SLOWER_2X" amount="0.2" /></Ingestion>
+    		<Stains><StatusEffect type="loa_REVERSE_GRAV" /></Stains>
+    		<Ingestion><StatusEffect type="loa_REVERSE_GRAV" amount="0.2" /></Ingestion>
   			</StatusEffects>
 		</CellData>
 	<!-- No Gravity Liquid -->
@@ -158,8 +158,8 @@
 		name="loa_no_grav"
 		ui_name="Nollapainovoimium"
 		tags="[liquid],[magic_liquid]"
-		stickyness="1.0"
-		density="8"
+		stickyness="0.0"
+		density="0.0"
 		cell_type="liquid"
 		wang_color="ffff0003"
 		generates_smoke="0"
@@ -183,8 +183,8 @@
 			probability="0.0518">
 			</ParticleEffect>
 		<StatusEffects>
-    		<Stains><StatusEffect type="MOVEMENT_SLOWER_2X" /></Stains>
-    		<Ingestion><StatusEffect type="MOVEMENT_SLOWER_2X" amount="0.2" /></Ingestion>
+    		<Stains><StatusEffect type="loa_NO_GRAV" /></Stains>
+    		<Ingestion><StatusEffect type="loa_NO_GRAV" amount="0.2" /></Ingestion>
   			</StatusEffects>
 		</CellData>
 	<!-- Gravity Liquid Base -->
