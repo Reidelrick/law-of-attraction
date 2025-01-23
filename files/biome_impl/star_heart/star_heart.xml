@@ -7,4 +7,5 @@
 		skip_biome_checks="1"
 	/>
 	<LifetimeComponent lifetime="2"/>
+	<LuaComponent execute_on_added="1" remove_after_executed="1" script_source_file="mods/law-of-attraction/files/biome_impl/star_heart/init.lua"/>
 </Entity>
