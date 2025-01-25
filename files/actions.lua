@@ -83,7 +83,7 @@ table.insert( actions,
 	mana = 1,
 	max_uses = -1,
 	action 		= function()
-		add_projectile("mods/law-of-attraction/files/entities/items/pickup/starstone.xml")
+		add_projectile("mods/law-of-attraction/files/entities/items/pickup/starstone_2.xml")
 		c.fire_rate_wait = c.fire_rate_wait + 15
 	end,
 	

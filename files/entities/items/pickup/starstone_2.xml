@@ -19,7 +19,7 @@
 	<PhysicsImageShapeComponent 
 		body_id="1"
 		centered="1"
-		image_file="mods/law-of-attraction/files/items_gfx/starstone.png"
+		image_file="mods/law-of-attraction/files/items_gfx/starstone_2.png"
 		material="loa_osmium"
 	></PhysicsImageShapeComponent>
 	
@@ -39,14 +39,14 @@
 		_enabled="0"
 		offset_x="4"
 		offset_y="4"
-		image_file="mods/law-of-attraction/files/items_gfx/starstone.png"
+		image_file="mods/law-of-attraction/files/items_gfx/starstone_2.png"
 	></SpriteComponent>
 
 	<ItemComponent
 		_tags="enabled_in_world"
-		item_name="Star Heart"
-		ui_description="The dormant heart of a dying star."
-		ui_sprite="mods/law-of-attraction/files/ui_gfx/items/starstone.png"
+		item_name="Awoken Star Heart"
+		ui_description="The pulsing heart of a dying star."
+		ui_sprite="mods/law-of-attraction/files/ui_gfx/items/starstone_2.png"
 		max_child_items="0"
 		is_pickable="1"
 		is_equipable_forced="1"
@@ -55,7 +55,7 @@
 
 	<UIInfoComponent
 		_tags="enabled_in_world"
-		name="Star Heart">
+		name="Awoken Star Heart">
 	</UIInfoComponent>
 	
 	<SpriteParticleEmitterComponent
@@ -90,7 +90,7 @@
 	</SpriteParticleEmitterComponent>
 	
 	<AbilityComponent
-		ui_name="Star Heart"
+		ui_name="Awoken Star Heart"
 		throw_as_item="1"
 		><gun_config
 			deck_capacity="0"
@@ -100,9 +100,9 @@
 	<MagicConvertMaterialComponent
 		_tags="enabled_in_world,enabled_in_hand"
 		kill_when_finished="1"
-		from_material_tag_array="[liquid],[sand_other],[sand_ground],[sand_metal],[fire],[solid]"
+		from_material_tag="[liquid]"
+		to_material_array="loa_grav_base"
 		steps_per_frame="2"
-		to_material_array="loa_grav_base,loa_osmium,loa_osmium,loa_osmium,fire_blue,steel_static"
 		clean_stains="0"
 		is_circle="1"
 		radius="64" 
@@ -129,22 +129,22 @@
 		airflow_force="0.9"
 		airflow_time="0.101"
 		airflow_scale="0.81"
-		count_min="8"
-		count_max="16"
+		count_min="32"
+		count_max="64"
 		lifetime_min="1.0"
 		lifetime_max="5.0"
 		create_real_particles="0"
 		emit_cosmetic_particles="1"
 		collide_with_grid="1"
 		render_on_grid="1"
-		emission_interval_min_frames="12"
-		emission_interval_max_frames="60"
+		emission_interval_min_frames="2"
+		emission_interval_max_frames="8"
 		is_emitting="1" >
 	</ParticleEmitterComponent>
 
 	<LuaComponent
 		_tags="enabled_in_world,enabled_in_hand"
-		script_source_file="mods/law-of-attraction/files/scripts/items/starstone.lua"
+		script_source_file="mods/law-of-attraction/files/scripts/items/starstone_2.lua"
 		execute_every_n_frame="5"
 		>
 	</LuaComponent>
