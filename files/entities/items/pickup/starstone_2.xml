@@ -20,7 +20,7 @@
 		body_id="1"
 		centered="1"
 		image_file="mods/law-of-attraction/files/items_gfx/starstone_2.png"
-		material="loa_osmium"
+		material="gem_box2d_turquoise"
 	></PhysicsImageShapeComponent>
 	
 	<PhysicsThrowableComponent
@@ -101,7 +101,7 @@
 		_tags="enabled_in_world,enabled_in_hand"
 		kill_when_finished="1"
 		from_material_tag="[liquid]"
-		to_material_array="loa_grav_base"
+		to_material="fire_blue"
 		steps_per_frame="2"
 		clean_stains="0"
 		is_circle="1"

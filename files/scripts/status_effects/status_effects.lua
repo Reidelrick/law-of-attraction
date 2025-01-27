@@ -13,7 +13,6 @@ local loa_status_list = {
         ui_name="High Gravity",
         ui_description="You feel heavy.",
         ui_icon="mods/law-of-attraction/files/ui_gfx/status_indicators/high_grav.png",
-        protects_from_fire=false,
         effect_entity="mods/law-of-attraction/files/entities/misc/effect_high_grav.xml",
     },
     {

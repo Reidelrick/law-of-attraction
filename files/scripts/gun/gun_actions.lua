@@ -88,3 +88,21 @@ table.insert( actions,
 	end,
 	
 })
+table.insert( actions,
+{
+	id          = "HIGH_GRAV_ARROW",
+	name 		= "Gravity Arrow",
+	description = "A coated arrow. Makes you fall faster.",
+	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/push_field.png",
+	type 		= ACTION_TYPE_PROJECTILE,
+	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD
+	spawn_probability                 = "1,1,1,1", -- BERSERK_FIELD
+	price = 350,
+	mana = 1,
+	max_uses = -1,
+	action 		= function()
+		add_projectile("mods/law-of-attraction/files/entities/projectiles/high_grav_arrow.xml")
+		c.fire_rate_wait = c.fire_rate_wait - 60
+	end,
+	
+})
