@@ -1,0 +1,11 @@
+<Entity>
+	<PixelSceneComponent
+		pixel_scene="mods/law-of-attraction/files/biome_impl/star_nest/wang.png"
+		pixel_scene_background="mods/law-of-attraction/files/biome_impl/star_nest/background.png"
+		offset_x="0"
+		offset_y="0"
+		skip_biome_checks="1"
+	/>
+	<LifetimeComponent lifetime="2"/>
+	<LuaComponent execute_on_added="1" remove_after_executed="1" script_source_file="mods/law-of-attraction/files/biome_impl/star_nest/init.lua"/>
+</Entity>
