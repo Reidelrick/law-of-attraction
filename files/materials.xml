@@ -1,6 +1,33 @@
 <Materials>
 <!-- =================================================================================================================  -->
-<!-- STATIC SANDS  -->
+<!-- BOX2D  -->
+		<CellData
+			name="loa_rock_box2d"
+			ui_name="Rock"
+			tags="[box2d],[corrodible],[alchemy],[solid],[earth]"
+			burnable="0"
+			density="8"
+			cell_type="solid"
+			wang_color="ff3b5d3c"
+			generates_smoke="0"
+			on_fire="0"
+			requires_oxygen="1"
+			temperature_of_fire="50"
+			autoignition_temperature="99"
+			solid_friction="0.7"
+			solid_static_type="0"
+			hp="5000"
+			electrical_conductivity="1"
+			audio_physics_material_wall="gravel"
+			audio_physics_material_solid="metalhollow"
+			show_in_creative_mode="1">
+			<Graphics
+			texture_file="data/materials_gfx/steel.png"
+			color="ff73737f">
+				</Graphics>
+  	</CellData>
+<!-- =================================================================================================================  -->
+<!-- SOLID  -->
 	<!-- Stable Rock -->
 	<CellData
 		name="loa_rock_stable"

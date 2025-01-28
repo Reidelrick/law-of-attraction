@@ -20,7 +20,7 @@
 		body_id="1"
 		centered="1"
 		image_file="mods/law-of-attraction/files/items_gfx/starstone_2.png"
-		material="gem_box2d_turquoise"
+		material="loa_rock_box2d"
 	></PhysicsImageShapeComponent>
 	
 	<PhysicsThrowableComponent
