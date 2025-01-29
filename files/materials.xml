@@ -1,9 +1,9 @@
 <Materials>
 	<!-- =================================================================================================================  -->
 	<!-- BOX2D  -->
-	<CellData name="loa_star_box2D_heart" ui_name="Star Heart" tags="[box2d],[corrodible],[alchemy],[solid],[earth]" burnable="0" density="8" cell_type="solid" wang_color="ff00e4f0" generates_smoke="0" on_fire="0" requires_oxygen="1" temperature_of_fire="50" autoignition_temperature="99" solid_friction="0.7" solid_static_type="0" hp="5000" electrical_conductivity="1" audio_physics_material_wall="gravel" audio_physics_material_solid="metalhollow" show_in_creative_mode="1">
+	<!-- <CellData name="loa_star_box2D_heart" ui_name="Star Heart" tags="[box2d],[corrodible],[alchemy],[solid],[earth]" burnable="0" density="8" cell_type="solid" wang_color="ff00e4f0" generates_smoke="0" on_fire="0" requires_oxygen="1" temperature_of_fire="50" autoignition_temperature="99" solid_friction="0.7" solid_static_type="0" hp="5000" electrical_conductivity="1" audio_physics_material_wall="gravel" audio_physics_material_solid="metalhollow" show_in_creative_mode="1">
 		<Graphics texture_file="mods/law-of-attraction/files/materials_gfx/osmium.png" color="ff00e4f0"></Graphics>
-	</CellData>
+	</CellData> -->
 	<!-- =================================================================================================================  -->
 	<!-- SOLID  -->
 	<CellData name="loa_rock_stable" ui_name="Vakauskivi" cell_type="liquid" liquid_sand="1" liquid_static="1" tags="" density="14" hp="1000000" requires_oxygen="1" wang_color="ffff0006" burnable="0" temperature_of_fire="50" autoignition_temperature="99" solid_friction="0.7" electrical_conductivity="0" show_in_creative_mode="1">

@@ -1,10 +1,10 @@
 table.insert( actions,
 {
-	id          = "PULL_FIELD",
+	id          = "LOA_PULL_FIELD",
 	name 		= "First Law of Attraction",
 	description = "Conjure a small well of convergent gravity that attracts everything for a duration.",
 	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/pull_field.png",
-	type 		= ACTION_TYPE_MATERIAL,
+	type 		= ACTION_TYPE_STATIC,
 	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD
 	spawn_probability                 = "1,1,1,1", -- BERSERK_FIELD
 	price = 350,
@@ -18,11 +18,11 @@ table.insert( actions,
 })
 table.insert( actions,
 {
-	id          = "PULL_POINT",
+	id          = "LOA_PULL_POINT",
 	name 		= "Second Law of Attraction",
 	description = "Conjure a short-lived rift of convergent gravity that attracts everything for a fraction of a second.",
 	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/pull_point.png",
-	type 		= ACTION_TYPE_MATERIAL,
+	type 		= ACTION_TYPE_STATIC,
 	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD
 	spawn_probability                 = "1,1,1,1", -- BERSERK_FIELD
 	price = 350,
@@ -36,11 +36,11 @@ table.insert( actions,
 })
 table.insert( actions,
 {
-	id          = "PUSH_FIELD",
+	id          = "LOA_PUSH_FIELD",
 	name 		= "First Law of Repulsion",
 	description = "Conjure a small well of divergent gravity that pushes away everything for a duration.",
 	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/push_field.png",
-	type 		= ACTION_TYPE_MATERIAL,
+	type 		= ACTION_TYPE_STATIC,
 	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD
 	spawn_probability                 = "1,1,1,1", -- BERSERK_FIELD
 	price = 350,
@@ -54,11 +54,11 @@ table.insert( actions,
 })
 table.insert( actions,
 {
-	id          = "PUSH_POINT",
+	id          = "LOA_PUSH_POINT",
 	name 		= "Second Law of Repulsion",
 	description = "Conjure a short-lived rift of divergent gravity that pushes away everything for a fraction of a second.",
 	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/push_point.png",
-	type 		= ACTION_TYPE_MATERIAL,
+	type 		= ACTION_TYPE_STATIC,
 	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD
 	spawn_probability                 = "1,1,1,1", -- BERSERK_FIELD
 	price = 350,
@@ -72,7 +72,7 @@ table.insert( actions,
 })
 table.insert( actions,
 {
-	id          = "STAR_HEART",
+	id          = "LOA_STAR_HEART",
 	name 		= "Summon Star",
 	description = "Conjure the heart of a dying star from thin air.",
 	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/push_point.png",
@@ -90,7 +90,7 @@ table.insert( actions,
 })
 table.insert( actions,
 {
-	id          = "HIGH_GRAV_ARROW",
+	id          = "LOA_HIGH_GRAV_ARROW",
 	name 		= "Gravity Arrow",
 	description = "A coated arrow. Makes you fall faster.",
 	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/push_field.png",
