@@ -1,8 +1,8 @@
 table.insert( actions,
 {
 	id          = "LOA_PULL_FIELD",
-	name 		= "First Law of Attraction",
-	description = "Conjure a small well of convergent gravity that attracts everything for a duration.",
+	name 		= "$loa_pull_field",
+	description = "$loa_pull_field_desc",
 	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/pull_field.png",
 	type 		= ACTION_TYPE_STATIC,
 	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD
@@ -19,8 +19,8 @@ table.insert( actions,
 table.insert( actions,
 {
 	id          = "LOA_PULL_POINT",
-	name 		= "Second Law of Attraction",
-	description = "Conjure a short-lived rift of convergent gravity that attracts everything for a fraction of a second.",
+	name 		= "$loa_pull_point",
+	description = "$loa_pull_point_desc",
 	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/pull_point.png",
 	type 		= ACTION_TYPE_STATIC,
 	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD
@@ -37,8 +37,8 @@ table.insert( actions,
 table.insert( actions,
 {
 	id          = "LOA_PUSH_FIELD",
-	name 		= "First Law of Repulsion",
-	description = "Conjure a small well of divergent gravity that pushes away everything for a duration.",
+	name 		= "$loa_push_field",
+	description = "$loa_push_field_desc",
 	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/push_field.png",
 	type 		= ACTION_TYPE_STATIC,
 	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD
@@ -55,8 +55,8 @@ table.insert( actions,
 table.insert( actions,
 {
 	id          = "LOA_PUSH_POINT",
-	name 		= "Second Law of Repulsion",
-	description = "Conjure a short-lived rift of divergent gravity that pushes away everything for a fraction of a second.",
+	name 		= "$loa_push_point",
+	description = "$loa_push_point_desc",
 	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/push_point.png",
 	type 		= ACTION_TYPE_STATIC,
 	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD

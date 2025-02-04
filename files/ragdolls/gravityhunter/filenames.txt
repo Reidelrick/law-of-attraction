@@ -1,0 +1,11 @@
+mods/law-of-attraction/files/ragdolls/gravitymage/torso.png
+mods/law-of-attraction/files/ragdolls/gravitymage/right_thigh.png
+mods/law-of-attraction/files/ragdolls/gravitymage/right_foot.png
+mods/law-of-attraction/files/ragdolls/gravitymage/right_arm.png
+mods/law-of-attraction/files/ragdolls/gravitymage/right_hand.png
+mods/law-of-attraction/files/ragdolls/gravitymage/left_thigh.png
+mods/law-of-attraction/files/ragdolls/gravitymage/left_foot.png
+mods/law-of-attraction/files/ragdolls/gravitymage/left_arm.png
+mods/law-of-attraction/files/ragdolls/gravitymage/left_hand.png
+mods/law-of-attraction/files/ragdolls/gravitymage/head.png
+mods/law-of-attraction/files/ragdolls/gravitymage/hood.png

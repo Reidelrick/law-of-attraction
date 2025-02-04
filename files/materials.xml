@@ -6,17 +6,17 @@
 	</CellData> -->
 	<!-- =================================================================================================================  -->
 	<!-- SOLID  -->
-	<CellData name="loa_rock_stable" ui_name="Vakauskivi" cell_type="liquid" liquid_sand="1" liquid_static="1" tags="" density="14" hp="1000000" requires_oxygen="1" wang_color="ffff0006" burnable="0" temperature_of_fire="50" autoignition_temperature="99" solid_friction="0.7" electrical_conductivity="0" show_in_creative_mode="1">
+	<CellData name="loa_rock_stable" ui_name="$loa_rock_stable" cell_type="liquid" liquid_sand="1" liquid_static="1" tags="" density="14" hp="1000000" requires_oxygen="1" wang_color="ffff0006" burnable="0" temperature_of_fire="50" autoignition_temperature="99" solid_friction="0.7" electrical_conductivity="0" show_in_creative_mode="1">
 		<Graphics texture_file="mods/law-of-attraction/files/materials_gfx/osmium.png" color="ffb89e58"></Graphics>
 	</CellData>
 	<!-- =================================================================================================================  -->
 	<!-- POWDER  -->
-	<CellData name="loa_osmium" ui_name="Osmium" tags="[sand_metal],[alchemy],[solid],[earth]" burnable="0" density="8" cell_type="liquid" wang_color="ffff0005" generates_smoke="0" on_fire="0" liquid_gravity="2.5" liquid_sand="1" requires_oxygen="1" temperature_of_fire="50" autoignition_temperature="99" solid_friction="0.7" hp="8000" electrical_conductivity="1" show_in_creative_mode="1">
+	<CellData name="loa_osmium" ui_name="$loa_osmium" tags="[sand_metal],[alchemy],[solid],[earth]" burnable="0" density="8" cell_type="liquid" wang_color="ffff0005" generates_smoke="0" on_fire="0" liquid_gravity="2.5" liquid_sand="1" requires_oxygen="1" temperature_of_fire="50" autoignition_temperature="99" solid_friction="0.7" hp="8000" electrical_conductivity="1" show_in_creative_mode="1">
 		<Graphics texture_file="mods/law-of-attraction/files/materials_gfx/osmium.png" color="ffb89e58"></Graphics>
 	</CellData>
 	<!-- =================================================================================================================  -->
 	<!-- LIQUID  -->
-	<CellData name="loa_low_grav" ui_name="Alhainenpainovoimium" tags="[liquid],[magic_liquid]" wang_color="ffff0000" gfx_glow="255" density="0" stickyness="0.0" liquid_flow_speed="1.0" liquid_stains="1" cell_type="liquid" audio_materialaudio_type="MAGICAL" show_in_creative_mode="1">
+	<CellData name="loa_low_grav" ui_name="$loa_low_grav" tags="[liquid],[magic_liquid]" wang_color="ffff0000" gfx_glow="255" density="0" stickyness="0.0" liquid_flow_speed="1.0" liquid_stains="1" cell_type="liquid" audio_materialaudio_type="MAGICAL" show_in_creative_mode="1">
 		<Graphics color="eeeeaadd"></Graphics>
 		<ParticleEffect vel.y="17.14" vel_random.min_y="-100" vel_random.max_y="25.71" lifetime.min="0" gravity.y="-8.57" render_on_grid="1" draw_as_long="1" friction="-3.429" probability="0.0518"></ParticleEffect>
 		<StatusEffects>
@@ -28,7 +28,7 @@
 			</Ingestion>
 		</StatusEffects>
 	</CellData>
-	<CellData name="loa_high_grav" ui_name="Suuripainovoimium" tags="[liquid],[magic_liquid]" stickyness="0.0" density="4" cell_type="liquid" wang_color="ffff0001" generates_smoke="0" liquid_flow_speed="1" liquid_stains="1" gfx_glow="255" audio_materialaudio_type="MAGICAL" show_in_creative_mode="1">
+	<CellData name="loa_high_grav" ui_name="$loa_high_grav" tags="[liquid],[magic_liquid]" stickyness="0.0" density="4" cell_type="liquid" wang_color="ffff0001" generates_smoke="0" liquid_flow_speed="1" liquid_stains="1" gfx_glow="255" audio_materialaudio_type="MAGICAL" show_in_creative_mode="1">
 		<Graphics color="999966ff"></Graphics>
 		<ParticleEffect vel.y="17.14" vel_random.min_y="-100" vel_random.max_y="25.71" lifetime.min="0" gravity.y="8.57" render_on_grid="1" draw_as_long="1" friction="-3.429" probability="0.0518"></ParticleEffect>
 		<StatusEffects>
@@ -40,7 +40,7 @@
 			</Ingestion>
 		</StatusEffects>
 	</CellData>
-	<CellData name="loa_reverse_grav" ui_name="Käänteispainovoimium" tags="[liquid],[magic_liquid]" stickyness="0.0" density="0.0" cell_type="liquid" wang_color="ffff0002" generates_smoke="0" liquid_flow_speed="1" gfx_glow="255" liquid_stains="1" audio_materialaudio_type="MAGICAL" show_in_creative_mode="1">
+	<CellData name="loa_reverse_grav" ui_name="$loa_reverse_grav" tags="[liquid],[magic_liquid]" stickyness="0.0" density="0.0" cell_type="liquid" wang_color="ffff0002" generates_smoke="0" liquid_flow_speed="1" gfx_glow="255" liquid_stains="1" audio_materialaudio_type="MAGICAL" show_in_creative_mode="1">
 		<Graphics color="999966ff"></Graphics>
 		<ParticleEffect vel.y="17.14" vel_random.min_y="-100" vel_random.max_y="25.71" lifetime.min="0" gravity.y="8.57" render_on_grid="1" draw_as_long="1" friction="-3.429" probability="0.0518"></ParticleEffect>
 		<StatusEffects>
@@ -52,7 +52,7 @@
 			</Ingestion>
 		</StatusEffects>
 	</CellData>
-	<CellData name="loa_no_grav" ui_name="Nollapainovoimium" tags="[liquid],[magic_liquid]" stickyness="0.0" density="0.0" cell_type="liquid" wang_color="ffff0003" generates_smoke="0" liquid_flow_speed="1" gfx_glow="255" audio_materialaudio_type="MAGICAL" liquid_stains="1" show_in_creative_mode="1">
+	<CellData name="loa_no_grav" ui_name="$loa_no_grav" tags="[liquid],[magic_liquid]" stickyness="0.0" density="0.0" cell_type="liquid" wang_color="ffff0003" generates_smoke="0" liquid_flow_speed="1" gfx_glow="255" audio_materialaudio_type="MAGICAL" liquid_stains="1" show_in_creative_mode="1">
 		<Graphics color="999966ff"></Graphics>
 		<ParticleEffect vel.y="17.14" vel_random.min_y="-100" vel_random.max_y="25.71" lifetime.min="0" gravity.y="8.57" render_on_grid="1" draw_as_long="1" friction="-3.429" probability="0.0518"></ParticleEffect>
 		<StatusEffects>
@@ -64,7 +64,7 @@
 			</Ingestion>
 		</StatusEffects>
 	</CellData>
-	<CellData name="loa_grav_base" ui_name="Painovoimium" tags="[liquid],[corrodible],[freezable],[water],[liquid_common],[chaotic_transmutation]" burnable="0" density="4" cell_type="liquid" wang_color="ffff0004" generates_smoke="0" liquid_gravity="1.5" liquid_sand="0" liquid_stains_self="0" on_fire="0" requires_oxygen="1" temperature_of_fire="10" danger_water="1" liquid_stains="1" liquid_sprite_stain_ignited_drop_chance="10" liquid_sprite_stains_check_offset="-1" warmth_melts_to_material="steam" warmth_melts_chance_rev="500" cold_freezes_to_material="ice_static" show_in_creative_mode="1">
+	<CellData name="loa_grav_base" ui_name="$loa_grav_base" tags="[liquid],[corrodible],[freezable],[water],[liquid_common],[chaotic_transmutation]" burnable="0" density="4" cell_type="liquid" wang_color="ffff0004" generates_smoke="0" liquid_gravity="1.5" liquid_sand="0" liquid_stains_self="0" on_fire="0" requires_oxygen="1" temperature_of_fire="10" danger_water="1" liquid_stains="1" liquid_sprite_stain_ignited_drop_chance="10" liquid_sprite_stains_check_offset="-1" warmth_melts_to_material="steam" warmth_melts_chance_rev="500" cold_freezes_to_material="ice_static" show_in_creative_mode="1">
 		<Graphics color="A0376259"></Graphics>
 		<StatusEffects>
 			<Stains>
@@ -72,6 +72,9 @@
 			</Stains>
 		</StatusEffects>
 	</CellData>
+
+	<CellData name="loa_cursed_smoke" ui_name="$loa_cursed_smoke" tags="[gas]" burnable="0" density="1" lifetime="350" cell_type="gas" wang_color="ff101010" generates_smoke="0" liquid_gravity="0.5" liquid_sand="0" on_fire="0" requires_oxygen="0" temperature_of_fire="60" show_in_creative_mode="1">
+  	</CellData>
 	<!-- =================================================================================================================  -->
 	<!-- Reaction  -->
 	<Reaction probability="80" input_cell1="loa_grav_base" input_cell2="magic_liquid_faster_levitation" output_cell1="loa_low_grav" output_cell2="air"></Reaction>

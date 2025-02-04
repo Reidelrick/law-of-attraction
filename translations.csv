@@ -1,0 +1,17 @@
+,en,ru,pt-br,es-es,de,fr-fr,it,pl,zh-cn,jp,ko,,NOTES – use \n for newline,max length
+loa_rock_stable,Inert Rock,камень,rocha,roca,Fels,Roche Inerte,roccia,roccia,岩石,岩,바위,,Vakauskivi
+loa_osmium,Osmium,камень,rocha,roca,Fels,Osmium,roccia,roccia,岩石,岩,바위,,
+loa_low_grav,Faiblogravitatium,камень,rocha,roca,Fels,Faiblogravitatium,roccia,roccia,岩石,岩,바위,,Alhainenpainovoimium
+loa_high_grav,Supergravitatium,камень,rocha,roca,Fels,Supergravitatium,roccia,roccia,岩石,岩,바위,,Suuripainovoimium
+loa_reverse_grav,Antigravitatium,камень,rocha,roca,Fels,Antigravitatium,roccia,roccia,岩石,岩,바위,,Käänteispainovoimium
+loa_no_grav,Degravitatium,камень,rocha,roca,Fels,Degravitatium,roccia,roccia,岩石,岩,바위,,Nollapainovoimium
+loa_grav_base,Painovoimium,камень,rocha,roca,Fels,Gravitatium,roccia,roccia,岩石,岩,바위,,Painovoimium
+loa_cursed_smoke,Cursed Smoke,камень,rocha,roca,Fels,Fumée Maudite,roccia,roccia,岩石,岩,바위,,
+loa_pull_field,First Law of Attraction,камень,rocha,roca,Fels,Première Loi de l'Attraction,roccia,roccia,岩石,岩,바위,
+loa_pull_field_desc,Conjure a small well of convergent gravity that attracts everything for a duration.,камень,rocha,roca,Fels,,roccia,roccia,岩石,岩,바위,
+loa_pull_point,Second Law of Attraction,камень,rocha,roca,Fels,Seconde Loi de l'Attraction,roccia,roccia,岩石,岩,바위,
+loa_pull_point_desc,Conjure a short-lived rift of convergent gravity that attracts everything for a fraction of a second.,камень,rocha,roca,Fels,,roccia,roccia,岩石,岩,바위,
+loa_push_field,First Law of Repulsion,камень,rocha,roca,Fels,Première Loi de la Répulsion,roccia,roccia,岩石,岩,바위,
+loa_push_field_desc,Conjure a small well of divergent gravity that pushes away everything for a duration.,камень,rocha,roca,Fels,,roccia,roccia,岩石,岩,바위,
+loa_push_point,Second Law of Repulsion,камень,rocha,roca,Fels,Seconde Loi de la Répulsion,roccia,roccia,岩石,岩,바위,
+loa_push_point_desc,Conjure a short-lived rift of divergent gravity that pushes away everything for a fraction of a second.,камень,rocha,roca,Fels,,roccia,roccia,岩石,岩,바위,

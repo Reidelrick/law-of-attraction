@@ -130,10 +130,10 @@
 	<!-- attracted particles -->
 	<ParticleEmitterComponent
 		_tags="enabled_in_world,enabled_in_hand"
-		emitted_material_name="diamond"
+		emitted_material_name="loa_osmium"
 		gravity.y="0.0"
-		lifetime_min="5"
-		lifetime_max="10"
+		lifetime_min="2.5"
+		lifetime_max="5"
 		count_min="12"
 		count_max="25"
 		render_on_grid="1"
@@ -155,7 +155,7 @@
 	<!-- outer ring -->
 	<ParticleEmitterComponent
 		_tags="enabled_in_world,enabled_in_hand"
-		emitted_material_name="spark_white"
+		emitted_material_name="loa_osmium"
 		gravity.y="0.0"
 		lifetime_min="0.2"
 		lifetime_max="0.8"
@@ -173,35 +173,6 @@
 		emission_interval_max_frames="1"
 		emit_cosmetic_particles="1"
 		is_emitting="1">
-	</ParticleEmitterComponent>
-
-	<!-- small ring -->
-	<ParticleEmitterComponent
-		_tags="enabled_in_world,enabled_in_hand"
-		emitted_material_name="spark_white"
-		velocity_always_away_from_center="0"
-		x_vel_min="0"
-		x_vel_max="0"
-		y_vel_min="0"
-		y_vel_max="0"
-		gravity.y="160.0"
-		lifetime_min="0.2"
-		lifetime_max="3.5"
-		count_min="10"
-		count_max="20"
-		render_on_grid="1"
-		fade_based_on_lifetime="1"
-		area_circle_radius.min="4"
-		area_circle_radius.max="4"
-		cosmetic_force_create="0"
-		airflow_force="0.1"
-		airflow_time="0.01"
-		airflow_scale="0.05"
-		emission_interval_min_frames="20"
-		emission_interval_max_frames="20"
-		emit_cosmetic_particles="1"
-		is_emitting="1"
-	>
 	</ParticleEmitterComponent>
 
 	<AudioLoopComponent

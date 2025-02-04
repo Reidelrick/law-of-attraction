@@ -1,50 +1,67 @@
-<Entity name="Tähtisumu" tags="gravitymage" >
+<Entity name="Tähtisumu" tags="gravityhunter" >
   
 	<Base file="data/entities/base_enemy_basic.xml" >
 		<ItemChestComponent level="1" > </ItemChestComponent>
-		
+		<!-- Change the melee finish when we get an anim -->
+		<!-- Make a new projectile -->
 		<AnimalAIComponent 
 			_enabled="1" 
 			preferred_job="JobDefault"
-			attack_melee_damage_min="0.4" 
-			attack_melee_damage_max="0.7"
-			creature_detection_range_x="300"
-			creature_detection_range_y="300"
-			food_material="blood"
-			needs_food="0"
-            attack_only_if_attacked="0"
-			sense_creatures="1"
+			creature_detection_range_x="2000"
+			creature_detection_range_y="2000"
+			aggressiveness_min="100"
+			aggressiveness_max="100"
+
+			attack_melee_enabled="1"
+			attack_melee_damage_min="4" 
+			attack_melee_damage_max="4"
+			attack_melee_finish_enabled="0"
+
+			attack_dash_enabled="1"
+			attack_dash_distance="150"
+			attack_dash_lob="0.1"
+			attack_dash_speed="500"
+			attack_dash_damage="6"
+
 			attack_ranged_enabled="1"
-			can_fly="0"  
+			attack_ranged_min_distance="0"
+			attack_ranged_max_distance="64"
 			attack_ranged_action_frame="3"
-			attack_ranged_entity_file="data/entities/projectiles/deck/black_hole.xml"
+			attack_ranged_predict="1"
+			attack_ranged_entity_file="mods/law-of-attraction/files/entities/projectiles/cursed_smokebomb.xml"
 			attack_ranged_frames_between="80"
-			attack_ranged_min_distance="10" 
+			attack_landing_ranged_enabled="1"
+
+			food_material="loa_osmium"
+			needs_food="0"
+			sense_creatures="1"
+			can_fly="0"  
 			>
 		</AnimalAIComponent>
 		
 		<DamageModelComponent 
-            hp="5"
-			ragdoll_filenames_file="data/ragdolls/firemage/filenames.txt" 
+            hp="100"
+			ragdoll_filenames_file="mods/law-of-attraction/files/ragdolls/gravityhunter/filenames.txt" 
 			fire_probability_of_ignition="0" 
-			materials_that_damage="acid,water,poison,blood_cold,blood_cold_vapour,mud,water_swamp,water_salt,swamp,snow,water_ice" 
-			materials_how_much_damage="0.004,0.0005,0.001,0.0008,0.0007,0.0005,0.0005,0.0005,0.0005,0.0005,0.0005"
-			ragdoll_material="lavarock_static"
-			blood_material="lava"
-			blood_spray_material="lava"
-			blood_multiplier="0.6"
+			materials_that_damage="" 
+			materials_how_much_damage=""
+			ragdoll_material="loa_osmium"
+			blood_material="loa_high_grav"
+			blood_spray_material="loa_high_grav"
+			air_needed="0"
+			blood_multiplier="0.05"
 			blood_sprite_directional=""
 			blood_sprite_large=""
-			wet_status_effect_damage="0.3"
+			wet_status_effect_damage="0.0"
 			>
 			<damage_multipliers
-				explosion="0.4"
-				fire="0.0" >
+				curse="0.0"
+				physics_hit="0.0">
 			</damage_multipliers>
 		</DamageModelComponent>
 
 		<SpriteComponent 
-			image_file="data/enemies_gfx/firemage.xml" 
+			image_file="mods/law-of-attraction/files/enemies_gfx/gravityhunter.xml" 
 			offset_x="0"
 			offset_y="0">
 		</SpriteComponent>
@@ -52,10 +69,10 @@
 		<PathFindingComponent
 			can_jump="1"
 			can_fly="0" 
-			jump_speed="130"
+			jump_speed="500"
 			initial_jump_lob="1"
-			initial_jump_max_distance_x="90"
-			initial_jump_max_distance_y="90"
+			initial_jump_max_distance_x="180"
+			initial_jump_max_distance_y="180"
 			>
 		</PathFindingComponent>
 
@@ -64,14 +81,14 @@
 		</PathFindingGridMarkerComponent>
 		
 		<GenomeDataComponent 
-			herd_id="mage"
+			herd_id="-1"
 			food_chain_rank="5"
 			is_predator="1" >
 		</GenomeDataComponent>
 		
 		<CharacterPlatformingComponent 
-			jump_velocity_y="-6" 
-			run_velocity="18"  >
+			jump_velocity_y="-12" 
+			run_velocity="24"  >
 		</CharacterPlatformingComponent>
 
 		<CameraBoundComponent
@@ -127,19 +144,19 @@
 			</ParticleEmitterComponent>
 	  
 			<ParticleEmitterComponent 
-				color="ff3fe2df"
+				color="7f7c41ff"
 				x_pos_offset_min="-2"
 				x_pos_offset_max="2" >
 			</ParticleEmitterComponent>
 			
 			<ParticleEmitterComponent 
-				emitted_material_name="spark_blue"
+				emitted_material_name="spark_purple_bright"
 				x_pos_offset_min="-2"
 				x_pos_offset_max="2" >
 			</ParticleEmitterComponent>
 			
 			<ParticleEmitterComponent 
-				emitted_material_name="fire_blue"
+				emitted_material_name="spark_purple"
 				>
 			</ParticleEmitterComponent>
 
@@ -166,7 +183,7 @@
 			</ParticleEmitterComponent>
 	  
 			<ParticleEmitterComponent 
-				color="ff3fe2df"
+				color="7f7c41ff"
 				count_min="2"
 				count_max="3"
 				x_pos_offset_min="-1"
@@ -176,7 +193,7 @@
 			</ParticleEmitterComponent>
 			
 			<ParticleEmitterComponent 
-				emitted_material_name="spark_blue"
+				emitted_material_name="spark_purple_bright"
 				x_pos_offset_min="-1"
 				x_pos_offset_max="1" 
 				y_pos_offset_min="-3"
@@ -184,7 +201,7 @@
 			</ParticleEmitterComponent>
 			
 			<ParticleEmitterComponent 
-				emitted_material_name="fire_blue"
+				emitted_material_name="spark_purple"
 				>
 			</ParticleEmitterComponent>
 
@@ -212,5 +229,70 @@
 		set_speed_parameter="1"
 		auto_play="1">
 	</AudioLoopComponent>
+
+	<LuaComponent
+		_tags="enabled_in_world,enabled_in_hand"
+		script_source_file="mods/law-of-attraction/files/scripts/animals/gravityhunter.lua"
+		execute_every_n_frame="1"
+	>
+	</LuaComponent>
+
+	<LightComponent
+		_tags="enabled_in_world"
+		radius="64"
+		r="128"
+		g="0"
+		b="255"
+		fade_out_time="0.2"
+	>
+	</LightComponent>
+
+	<!-- attracted particles -->
+	<ParticleEmitterComponent
+		_tags="enabled_in_world"
+		emitted_material_name="loa_osmium"
+		gravity.y="0.0"
+		lifetime_min="0.5"
+		lifetime_max="1"
+		count_min="6"
+		count_max="12"
+		render_on_grid="1"
+		fade_based_on_lifetime="1"
+		area_circle_radius.max="96"
+		cosmetic_force_create="0"
+		airflow_force="0.5"
+		airflow_time="0.01"
+		airflow_scale="0.05"
+		emission_interval_min_frames="1"
+		emission_interval_max_frames="1"
+		emit_cosmetic_particles="1"
+		is_emitting="1"
+		draw_as_long="1"
+		attractor_force="6"
+	>
+	</ParticleEmitterComponent>
+
+	<!-- outer ring -->
+	<ParticleEmitterComponent
+		_tags="enabled_in_world"
+		emitted_material_name="loa_osmium"
+		gravity.y="0.0"
+		lifetime_min="0.2"
+		lifetime_max="0.8"
+		count_min="50"
+		count_max="100"
+		render_on_grid="1"
+		fade_based_on_lifetime="1"
+		area_circle_radius.min="64"
+		area_circle_radius.max="64"
+		cosmetic_force_create="0"
+		airflow_force="0.3"
+		airflow_time="0.01"
+		airflow_scale="0.05"
+		emission_interval_min_frames="1"
+		emission_interval_max_frames="1"
+		emit_cosmetic_particles="1"
+		is_emitting="1">
+	</ParticleEmitterComponent>
 
 </Entity>
