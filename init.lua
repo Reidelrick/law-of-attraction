@@ -67,7 +67,10 @@ end
 
 function OnPlayerSpawned(player_entity)
 	-- Enemy Testing
-	EntityLoad("mods/law-of-attraction/files/entities/animals/gravityhunter.xml", 50, -50);
+	-- EntityLoad("mods/law-of-attraction/files/entities/animals/gravitygoliath.xml", 50, -400);
+
+	-- Wand Testing
+	EntityLoad("mods/law-of-attraction/files/entities/items/wands/voidglider.xml", 50, -50)
 
 	-- Star Nest
 	EntityLoad('mods/law-of-attraction/files/biome_impl/star_nest/star_nest.xml', 6650, 14881);

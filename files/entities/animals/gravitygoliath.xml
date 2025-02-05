@@ -1,0 +1,136 @@
+<Entity name="$animal_loa_gravitygoliath">
+
+	<Base file="data/entities/base_enemy_basic.xml">
+		<ItemChestComponent level="1"> </ItemChestComponent>
+		<!-- Change the melee finish when we get an anim -->
+		<!-- Make a new projectile -->
+		<AnimalAIComponent
+			_enabled="1"
+			preferred_job="JobDefault"
+			creature_detection_range_x="500"
+			creature_detection_range_y="500"
+			aggressiveness_min="100"
+			aggressiveness_max="100"
+			attack_melee_enabled="1"
+			attack_melee_damage_min="12"
+			attack_melee_damage_max="12"
+			attack_melee_max_distance="40.5"
+			attack_melee_frames_between="6"
+			food_material="loa_osmium"
+			needs_food="1"
+			sense_creatures="1"
+			can_fly="0"
+			can_jump="0"
+		>
+		</AnimalAIComponent>
+
+		<DamageModelComponent
+			hp="250"
+			ragdoll_filenames_file="mods/law-of-attraction/files/ragdolls/gravitygoliath/filenames.txt"
+			fire_probability_of_ignition="0"
+			materials_that_damage="loa_high_grav,loa_low_grav,loa_reverse_grav,loa_no_grav"
+			materials_how_much_damage="-0.01,0.001,0.1,0.01"
+			ragdoll_material="loa_osmium"
+			blood_material="loa_osmium"
+			blood_spray_material="loa_osmium"
+			air_needed="0"
+			blood_multiplier="2"
+			blood_sprite_directional=""
+			blood_sprite_large=""
+			wet_status_effect_damage="0.0"
+		>
+			<damage_multipliers
+				drill="2.5"
+				explosion="0.0"
+				physics_hit="0.0">
+			</damage_multipliers>
+		</DamageModelComponent>
+
+		<SpriteComponent
+			image_file="mods/law-of-attraction/files/enemies_gfx/gravitygoliath.xml"
+			offset_x="0"
+			offset_y="0">
+		</SpriteComponent>
+
+		<PathFindingComponent
+			can_jump="0"
+			can_fly="0"
+		>
+		</PathFindingComponent>
+
+		<PathFindingGridMarkerComponent
+			marker_work_flag="16">
+		</PathFindingGridMarkerComponent>
+
+		<GenomeDataComponent
+			herd_id="giant"
+			food_chain_rank="2"
+			is_predator="1">
+		</GenomeDataComponent>
+
+		<CharacterPlatformingComponent
+			run_velocity="4">
+		</CharacterPlatformingComponent>
+
+		<CameraBoundComponent
+			max_count="30"
+			distance="160000">
+		</CameraBoundComponent>
+
+		<HitboxComponent
+			_enabled="1"
+			aabb_min_x="-11"
+			aabb_max_x="11"
+			aabb_min_y="-21"
+			aabb_max_y="21"
+		>
+		</HitboxComponent>
+
+		<CharacterDataComponent
+			collision_aabb_min_x="-10"
+			collision_aabb_max_x="10"
+			collision_aabb_min_y="-20"
+			collision_aabb_max_y="20"
+			mass="500"
+		>
+		</CharacterDataComponent>
+	</Base>
+
+	<LightComponent
+		_enabled="1"
+		radius="100"
+		fade_out_time="1.5"
+	>
+	</LightComponent>
+
+	<ItemPickUpperComponent
+		is_in_npc="1">
+	</ItemPickUpperComponent>
+
+	<MusicEnergyAffectorComponent
+		energy_target="1">
+	</MusicEnergyAffectorComponent>
+
+	<AudioComponent
+		file="data/audio/Desktop/animals.bank"
+		event_root="animals/firemage">
+	</AudioComponent>
+
+	<AudioLoopComponent
+		file="data/audio/Desktop/animals.bank"
+		event_name="animals/firemage/burning_loop"
+		set_speed_parameter="1"
+		auto_play="1">
+	</AudioLoopComponent>
+
+	<LightComponent
+		_tags="enabled_in_world"
+		radius="64"
+		r="0"
+		g="0"
+		b="255"
+		fade_out_time="0.2"
+	>
+	</LightComponent>
+
+</Entity>
