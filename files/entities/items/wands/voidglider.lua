@@ -13,11 +13,11 @@ dofile("data/scripts/gun/procedural/wands.lua")
             shuffle_deck_when_empty = 0,
             fire_rate_wait = -10.0,
             spread_degrees = 0,
-            speed_multiplier = 1,
+            speed_multiplier = 5,
             mana_charge_speed = 9999,
             mana_max = 9999,
-            always_cast = {"LIGHT_SHOT","LIGHT_SHOT"},
-            deck = {"LONG_DISTANCE_CAST","BURST_3","TAU","NOLLA","DISC_BULLET_BIGGER","NOLLA","TELEPORT_PROJECTILE_STATIC","TAU","REGENERATION_FIELD","POLYMORPH_FIELD"}
+            always_cast = {0},
+            deck = {"LONG_DISTANCE_CAST","ADD_TRIGGER","TAU","NOLLA","BLACK_HOLE_GIGA","LOA_DELAY_SHORT","BURST_2","NOLLA","TELEPORT_PROJECTILE_STATIC","TAU","REGENERATION_FIELD","POLYMORPH_FIELD"}
         };
         
         wand_info = wands[857]

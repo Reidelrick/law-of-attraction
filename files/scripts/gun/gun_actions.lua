@@ -11,7 +11,7 @@ table.insert( actions,
 	mana = 140,
 	max_uses = 3,
 	action 		= function()
-		add_projectile("mods/law-of-attraction/files/entities/projectiles/pull_field.xml")
+		add_projectile("mods/law-of-attraction/files/entities/projectiles/deck/pull_field.xml")
 		c.fire_rate_wait = c.fire_rate_wait + 15
 	end,
 	
@@ -29,7 +29,7 @@ table.insert( actions,
 	mana = 140,
 	max_uses = 3,
 	action 		= function()
-		add_projectile("mods/law-of-attraction/files/entities/projectiles/pull_point.xml")
+		add_projectile("mods/law-of-attraction/files/entities/projectiles/deck/pull_point.xml")
 		c.fire_rate_wait = c.fire_rate_wait + 15
 	end,
 	
@@ -47,7 +47,7 @@ table.insert( actions,
 	mana = 140,
 	max_uses = 3,
 	action 		= function()
-		add_projectile("mods/law-of-attraction/files/entities/projectiles/push_field.xml")
+		add_projectile("mods/law-of-attraction/files/entities/projectiles/deck/push_field.xml")
 		c.fire_rate_wait = c.fire_rate_wait + 15
 	end,
 	
@@ -65,44 +65,61 @@ table.insert( actions,
 	mana = 140,
 	max_uses = 3,
 	action 		= function()
-		add_projectile("mods/law-of-attraction/files/entities/projectiles/push_point.xml")
+		add_projectile("mods/law-of-attraction/files/entities/projectiles/deck/push_point.xml")
 		c.fire_rate_wait = c.fire_rate_wait + 15
 	end,
 	
 })
 table.insert( actions,
 {
-	id          = "LOA_STAR_HEART",
-	name 		= "Summon Star",
-	description = "Conjure the heart of a dying star from thin air.",
-	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/push_point.png",
-	type 		= ACTION_TYPE_MATERIAL,
+	id          = "LOA_DELAY_SHORT",
+	name 		= "$loa_delay_short",
+	description = "$loa_delay_short_desc",
+	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/delay_short.png",
+	type 		= ACTION_TYPE_UTILITY,
 	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD
 	spawn_probability                 = "1,1,1,1", -- BERSERK_FIELD
 	price = 350,
-	mana = 1,
+	mana = 0,
 	max_uses = -1,
 	action 		= function()
-		add_projectile("mods/law-of-attraction/files/entities/items/pickup/starstone_2.xml")
-		c.fire_rate_wait = c.fire_rate_wait + 15
+		add_projectile_trigger_death("mods/law-of-attraction/files/entities/projectiles/deck/delay_short.xml",1)
 	end,
 	
 })
 table.insert( actions,
 {
-	id          = "LOA_HIGH_GRAV_ARROW",
-	name 		= "Gravity Arrow",
-	description = "A coated arrow. Makes you fall faster.",
-	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/push_field.png",
-	type 		= ACTION_TYPE_PROJECTILE,
+	id          = "LOA_DELAY_MEDIUM",
+	name 		= "$loa_delay_medium",
+	description = "$loa_delay_medium_desc",
+	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/delay_medium.png",
+	type 		= ACTION_TYPE_UTILITY,
 	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD
 	spawn_probability                 = "1,1,1,1", -- BERSERK_FIELD
 	price = 350,
-	mana = 1,
+	mana = 0,
 	max_uses = -1,
 	action 		= function()
-		add_projectile("mods/law-of-attraction/files/entities/projectiles/high_grav_arrow.xml")
-		c.fire_rate_wait = c.fire_rate_wait - 60
+		add_projectile_trigger_death("mods/law-of-attraction/files/entities/projectiles/deck/delay_medium.xml",1)
+		c.fire_rate_wait = c.fire_rate_wait - 15.0
+	end,
+	
+})
+table.insert( actions,
+{
+	id          = "LOA_DELAY_LONG",
+	name 		= "$loa_delay_long",
+	description = "$loa_delay_long_desc",
+	sprite 		= "mods/law-of-attraction/files/ui_gfx/gun_actions/delay_long.png",
+	type 		= ACTION_TYPE_UTILITY,
+	spawn_level                       = "0,4,5,6", -- BERSERK_FIELD
+	spawn_probability                 = "1,1,1,1", -- BERSERK_FIELD
+	price = 350,
+	mana = 0,
+	max_uses = -1,
+	action 		= function()
+		add_projectile_trigger_death("mods/law-of-attraction/files/entities/projectiles/deck/delay_long.xml",1)
+		c.fire_rate_wait = c.fire_rate_wait - 150.0
 	end,
 	
 })
